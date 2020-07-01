@@ -1,5 +1,6 @@
 <template>
     <div>
+        <p class="text-black">Component that shows the process of how elements are added to DATA, and how they are added with @click events and these are activated or deactivated depending on whether or not there is information</p>
 
         <pre>{{$data}}</pre>
         
