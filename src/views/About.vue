@@ -1,5 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <Progres />
   </div>
 </template>
+
+<script>
+import Progres from '@/components/Progres.vue'
+
+export default {
+  name: 'Home',
+  components: {
+    Progres
+  }
+}
+</script>
