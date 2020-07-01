@@ -1,29 +1,32 @@
 <template>
     <div>
-        <p class="text-black">Component that shows the process of how elements are added to DATA, and how they are added with @click events and these are activated or deactivated depending on whether or not there is information</p>
-
-        <pre>{{$data}}</pre>
+        <p class="font-light bg-indigo-300 text-center py-3">ProgressBar Component which changes its color thanks to computed properties and disables its buttons when count === 0 and count === 100</p>
+        <pre class="bg-indigo-200 flex justify-center">
+    {{$data}}
+        </pre>
         
-        <div class="rounded-lg h-5 px-8 mt-5" :style="`width: ${count}%`">
+        <div class="rounded-lg h-5 px-8 mt-5 " :style="`width: ${count}%`">
             <div :class="modifyColor">
                 {{count}}%
             </div>
         </div>
 
-        <div class="mt-3 ">
-            <button class="rounded-md mr-5 px-3 py-1 focus:outline-none" 
-                    :class="[count === 0 ? 'pointer-events-none opacity-25 bg-red-500': 'bg-red-500']" 
-                    @click="count = count - 10"
-                    >
-                -
-            </button>
-
-            <button class="bg-green-500 rounded-md px-3 py-1 focus:outline-none"  
-                    :class="[count === 100 ? 'pointer-events-none opacity-25 bg-green-500' : 'bg-green-500']"
-                    @click="count = count + 10"
-                    >
-                +
-            </button>
+        <div class="flex justify-center">
+            <div class="mt-3 ">
+                <button class="rounded-md mr-5 px-3 py-1 focus:outline-none" 
+                        :class="[count === 0 ? 'pointer-events-none opacity-25 bg-red-500': 'bg-red-500']" 
+                        @click="count = count - 10"
+                        >
+                    -
+                </button>
+    
+                <button class="bg-green-500 rounded-md px-3 py-1 focus:outline-none"  
+                        :class="[count === 100 ? 'pointer-events-none opacity-25 bg-green-500' : 'bg-green-500']"
+                        @click="count = count + 10"
+                        >
+                    +
+                </button>
+        </div>
     
         </div>
     </div>

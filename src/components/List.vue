@@ -31,7 +31,7 @@
       <span class="text-white text-xs bg-black px-2 rounded-lg font-bold flex w-12 ml-3 h-4">-Vue</span>
         {{$data}}
       </pre>
-  
+
       <ul class="block md:w-1/2 bg-gray-600 text-black">
         <span class="text-white text-xs bg-black px-2 rounded-lg font-bold flex w-16 ml-3 mt-5">Render</span>
         <li v-for="(item, key) in list" :key="key">
@@ -73,7 +73,3 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
