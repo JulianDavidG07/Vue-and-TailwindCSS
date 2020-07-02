@@ -3,7 +3,10 @@
 
 ![gif](gif/captured.gif)
 
-## Project setup
+## Use Project
+1. You can clone this project and play with it: https://github.com/JulianDavidG07/Vue-and-TailwindCSS.git
+
+2. Then run:
 ```
 npm install
 ```
