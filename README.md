@@ -1,6 +1,8 @@
 # Link funtional project: https://vue-and-tailwind-css.vercel.app/
 # vue-project
 
+![gif](gif/captured.gif)
+
 ## Project setup
 ```
 npm install
